@@ -40,9 +40,6 @@ contract TokenTest is Test {
         vm.prank(hari);
         token.transferFrom(kanna, hari, transferAmount);
         assertEq(token.balanceOf(hari), transferAmount);
-        assertEq(
-            token.allowance(kanna, hari),
-            initialAllowance - transferAmount
-        );
+        assertEq(token.allowance(kanna, hari), initialAllowance - transferAmount);
     }
 }
