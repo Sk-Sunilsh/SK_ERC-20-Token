@@ -1,66 +1,43 @@
-## Foundry
+# 🏆 My First ERC-20 Token (in Foundry)
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains a simple **ERC-20 token** implemented using **Foundry**, a fast and efficient smart contract development framework for Ethereum. It provides a minimal yet powerful setup to learn and experiment with ERC-20 token creation and deployment.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🚀 Features
 
-## Documentation
+- ✔️ **ERC-20 Standard**: Implements a fully functional ERC-20 token  
+- ✔️ **Testing with Foundry**: Includes unit tests to ensure contract correctness  
+- ✔️ **Gas-efficient Implementation**: Optimized Solidity smart contract  
 
-https://book.getfoundry.sh/
+---
 
-## Usage
+## 📌 Prerequisites  
 
-### Build
+Ensure you have the following installed before proceeding:
 
-```shell
-$ forge build
+- **Foundry** (For smart contract development)  
+- **Node.js & npm** (For interacting with the contract via scripts)  
+- **MetaMask** or any Ethereum-compatible wallet  
+- **Sepolia Testnet** or **Local Anvil instance** for deployment  
+
+---
+
+## 🛠 Installation  
+
+### 🔹 Install Foundry in WSL  
+```sh
+forge init
 ```
-
-### Test
-
-```shell
-$ forge test
+### 🔹 Compile  
+```sh
+forge build
 ```
-
-### Format
-
-```shell
-$ forge fmt
+### 🔹 Test 
+```sh
+forge test
 ```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+### 🔹 Deploy  
+```sh
+forge script script/Deploy.s.sol
 ```
